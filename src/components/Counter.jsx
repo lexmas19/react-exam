@@ -19,15 +19,15 @@ export default function Counter() {
 
   return (
     <>
-      <div className="text-center mb-2">
-        <h2 className="text-orange-300">counter: {count}</h2>
-        <button className="border rounded px-2 bg-green-500 mr-1.5" onClick={increase}>
+      <div className="text-center mb-2 w-full bg-white rounded-2xl shadow p-6">
+        <h2 className="text-2xl font-bold text-orange-400 mb-4">counter: {count}</h2>
+        <button className="rounded-lg px-4 py-1.5 bg-green-500 text-white font-medium mx-1 hover:bg-green-600 active:scale-95 transition" onClick={increase}>
           increase
         </button>
-        <button className="border rounded px-2 bg-amber-400" onClick={decrease}>
+        <button className="rounded-lg px-4 py-1.5 bg-amber-400 text-white font-medium mx-1 hover:bg-amber-500 active:scale-95 transition" onClick={decrease}>
           decrease
         </button>
-        <button className="border rounded px-2 bg-red-500" onClick={reset}>
+        <button className="rounded-lg px-4 py-1.5 bg-red-500 text-white font-medium mx-1 hover:bg-red-600 active:scale-95 transition" onClick={reset}>
           reset
         </button>
       </div>
